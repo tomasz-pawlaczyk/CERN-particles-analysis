@@ -43,23 +43,23 @@ The analysis is performed separately for:
 .
 ├── CMakeLists.txt
 ├── macros
-│     └── draw_plots.C
+│   └── draw_plots.C
 └── src
-       ├── analysis.cpp
-       ├── analysis.h
-       ├── generator.cpp
-       ├── generator.h
-       └── main.cpp
+    ├── analysis.cpp
+    ├── analysis.h
+    ├── generator.cpp
+    ├── generator.h
+    └── main.cpp
 
 During execution, the program automatically creates the following output structure:
 
-└── output
-      ├── analysis.root
-      └── plots
-            ├── png
-            │    └── *.png
-            └── pdf
-                  └── *.pdf
+output
+├── analysis.root
+└── plots
+    ├── png
+    │   └── *.png
+    └── pdf
+        └── *.pdf
 
 ## Requirements
 
