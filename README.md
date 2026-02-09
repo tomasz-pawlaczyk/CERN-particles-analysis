@@ -40,26 +40,30 @@ The analysis is performed separately for:
 
 ### Project structure
 
+```bash
 .
 ├── CMakeLists.txt
 ├── macros
-│   └── draw_plots.C
+│ └── draw_plots.C
 └── src
-    ├── analysis.cpp
-    ├── analysis.h
-    ├── generator.cpp
-    ├── generator.h
-    └── main.cpp
+  ├── analysis.cpp
+  ├── analysis.h
+  ├── generator.cpp
+  ├── generator.h
+  └── main.cpp
+```
 
 During execution, the program automatically creates the following output structure:
 
-output
-├── analysis.root
-└── plots
+```bash
+└── output
+  ├── analysis.root
+  └── plots
     ├── png
-    │   └── *.png
+    │  └── *.png
     └── pdf
-        └── *.pdf
+       └── *.pdf
+```
 
 ## Requirements
 
@@ -84,7 +88,7 @@ cmake ..
 make
 ```
 
-**Note:**  The path to the local Pythia 8 installation must be set manually in `CMakeLists.txt` by editing  
+**Note!**  The path to the local Pythia 8 installation must be set manually in `CMakeLists.txt` by editing  
 `set(PYTHIA_DIR <insert your Pythia's path here>)` before running CMake.
 
 **2. Run the analysis**
